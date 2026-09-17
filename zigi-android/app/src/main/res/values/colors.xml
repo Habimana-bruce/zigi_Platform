@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mtn_yellow">#FFCC00</color>
+    <color name="bot_bubble">#EEF0F5</color>
+    <color name="text_dark">#1A1A1A</color>
+    <color name="hint_gray">#888888</color>
+    <color name="white">#FFFFFF</color>
+    <color name="input_bg">#F2F2F2</color>
+    <color name="border_gray">#DDDDDD</color>
+</resources>

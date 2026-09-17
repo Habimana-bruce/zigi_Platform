@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="start"
+    android:paddingHorizontal="12dp"
+    android:paddingVertical="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/bubble_bot_bg"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Sign In or Register to get started \uD83D\uDC47"
+            android:textColor="@color/text_dark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="First enter your credentials to request a verification OTP code."
+            android:textColor="@color/hint_gray"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/formContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/tabLoginButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    android:text="\uD83D\uDD11 Sign In"
+                    android:backgroundTint="@color/mtn_yellow"
+                    android:textColor="@color/text_dark"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/tabRegisterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    android:text="\uD83D\uDCDD Register"
+                    android:backgroundTint="@color/input_bg"
+                    android:textColor="@color/text_dark"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/fullNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:background="@android:drawable/edit_text"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/phoneInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number (e.g. 078XXXXXXX)"
+                android:inputType="phone"
+                android:background="@android:drawable/edit_text"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/emailInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:background="@android:drawable/edit_text"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <LinearLayout
+                android:id="@+id/deliveryMethodGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Send login verification code via:"
+                    android:textColor="@color/text_dark"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="6dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <Button
+                        android:id="@+id/methodPhoneButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="6dp"
+                        android:text="\uD83D\uDCF1 Phone"
+                        android:backgroundTint="@color/mtn_yellow"
+                        android:textColor="@color/text_dark"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:id="@+id/methodEmailButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="6dp"
+                        android:text="\u2709\uFE0F Email"
+                        android:backgroundTint="@color/input_bg"
+                        android:textColor="@color/text_dark"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/registerEmailNotice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\uD83D\uDCE7 A 6-digit verification code will be sent directly to your Email address."
+                android:textColor="@color/hint_gray"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SIGN IN &amp; GET OTP \uD83D\uDD12"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/mtn_yellow"
+                android:textColor="@color/text_dark" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

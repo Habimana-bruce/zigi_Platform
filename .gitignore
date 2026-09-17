@@ -1,0 +1,31 @@
+# Node / React
+node_modules/
+dist/
+build/
+.vite/
+
+# Java / Maven
+target/
+*.class
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# Android
+.gradle/
+local.properties
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
